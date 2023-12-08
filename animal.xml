@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animals>
+  <Animal>
+    <nom>canard</nom>
+    <espece>canard de barbarie</espece>
+    <age>2</age>
+    <poids>2.0</poids>
+  </Animal>
+  <Animal>
+    <nom>Serge</nom>
+    <espece>Alpaga</espece>
+    <age>2</age>
+    <poids>2.0</poids>
+  </Animal>
+</Animals>
