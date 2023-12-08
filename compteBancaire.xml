@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compteBancaire.xml>
+  <compteBancaire>
+    <numCompte>1</numCompte>
+    <nomProprietaire>Jean Massiet</nomProprietaire>
+    <solde>2000.0</solde>
+    <date>2023-10-10</date>
+    <typeCompte>Epargne</typeCompte>
+  </compteBancaire>
+  <compteBancaire>
+    <numCompte>2</numCompte>
+    <nomProprietaire>Jean-Baptise Shaw</nomProprietaire>
+    <solde>21000.0</solde>
+    <date>2021-11-01</date>
+    <typeCompte>Courant</typeCompte>
+  </compteBancaire>
+</compteBancaire.xml>
