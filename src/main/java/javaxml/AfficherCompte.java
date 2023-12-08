@@ -22,6 +22,7 @@ public class AfficherCompte {
 			List <Element> listeComptes = root.getChildren("compteBancaire");
 
 			List<CompteBancaire> comptes = new ArrayList<CompteBancaire>();
+			List<CompteBancaire> comptesCourants = new ArrayList<CompteBancaire>();
 			for(Element element : listeComptes)
 			{
 				CompteBancaire a = new CompteBancaire( Integer.parseInt(element.getChildText("numCompte")),
@@ -30,9 +31,18 @@ public class AfficherCompte {
 	                       					   LocalDate.parse(element.getChildText("date")),
 	                       					   element.getChildText("typeCompte")
 						);
-				comptes.add(a);						
+				comptes.add(a);	
+				if(a.getTypeCompte().equals("Courant"))
+				{
+					comptesCourants.add(a);
+				}
 			}
+			System.out.println("Liste des comptes");
 			for(CompteBancaire cpt : comptes) {
+				System.out.println(cpt.toString());
+			}
+			System.out.println("Liste des comptes courants");
+			for(CompteBancaire cpt : comptesCourants) {
 				System.out.println(cpt.toString());
 			}
 		}

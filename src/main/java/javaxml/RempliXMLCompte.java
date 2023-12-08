@@ -19,8 +19,8 @@ public class RempliXMLCompte {
 			CompteBancaire c1 = new CompteBancaire(001,"Jean Massiet",2000., LocalDate.of(2023, 10, 10),"Epargne" );
 			CompteBancaire c2 = new CompteBancaire(002,"Jean-Baptise Shaw",21000., LocalDate.of(2021, 11, 1),"Courant" );
 
-			doc.getRootElement().addContent(createAnimalXMLElement(c1));
-			doc.getRootElement().addContent(createAnimalXMLElement(c2));
+			doc.getRootElement().addContent(createCptXMLElement(c1));
+			doc.getRootElement().addContent(createCptXMLElement(c2));
 
 			XMLOutputter xmlOutput = new XMLOutputter();
 			xmlOutput.setFormat(Format.getPrettyFormat());
@@ -36,7 +36,7 @@ public class RempliXMLCompte {
 
 	}
 
-	private static Element createAnimalXMLElement(CompteBancaire cpt)
+	private static Element createCptXMLElement(CompteBancaire cpt)
 	{
 		Element animalElement = new Element("compteBancaire");
 		animalElement.addContent(new Element("numCompte").setText(""+cpt.getNumCompte()));
